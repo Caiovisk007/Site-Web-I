@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Minha Coleção</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../style/estilo.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <style type="text/css">
+    a:hover{
+      color: red;
+      text-decoration: none;
+    }
+
+    a{
+      color: black;
+    }
+
+    form{
+      text-align: center;     
+    }
+  </style>
+  <script type="text/javascript">
+    'use strict'
+    function adicionar1(){
+
+      var inserirQuantidade1 = document.getElementById("quantidade1").value;
+      var exibirQuantidade = document.getElementById("resultado1").textContent;
+
+      document.getElementById("resultado1").innerHTML = parseFloat(inserirQuantidade1) + parseFloat(exibirQuantidade);
+    } 
+
+    function adicionar2(){
+
+      var inserirQuantidade2 = document.getElementById("quantidade2").value;
+      var exibirQuantidade = document.getElementById("resultado2").textContent;
+
+      document.getElementById("resultado2").innerHTML = parseFloat(inserirQuantidade2) + parseFloat(exibirQuantidade);
+    } 
+
+    function adicionar3(){
+
+      var inserirQuantidade3 = document.getElementById("quantidade3").value;
+      var exibirQuantidade = document.getElementById("resultado3").textContent;
+
+      document.getElementById("resultado3").innerHTML = parseFloat(inserirQuantidade3) + parseFloat(exibirQuantidade);
+    } 
+
+    function adicionar4(){
+
+      var inserirQuantidade4 = document.getElementById("quantidade4").value;
+      var exibirQuantidade = document.getElementById("resultado4").textContent;
+
+      document.getElementById("resultado4").innerHTML = parseFloat(inserirQuantidade4) + parseFloat(exibirQuantidade);
+    } 
+
+    function adicionar5(){
+
+      var inserirQuantidade5 = document.getElementById("quantidade5").value;
+      var exibirQuantidade = document.getElementById("resultado5").textContent;
+
+      document.getElementById("resultado5").innerHTML = parseFloat(inserirQuantidade5) + parseFloat(exibirQuantidade);
+    } 
+
+    function adicionar6(){
+
+      var inserirQuantidade6 = document.getElementById("quantidade6").value;
+      var exibirQuantidade = document.getElementById("resultado6").textContent;
+
+      document.getElementById("resultado6").innerHTML = parseFloat(inserirQuantidade6) + parseFloat(exibirQuantidade);
+    }                 
+  </script>
+</head>
+
+<body style="background-color: #FFDAB9;">
+ <div class="container">
+
+ <!-- Novo cabeçalho -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" >Guitas de Plantão</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hist.html">História</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="avaliacoes.html">Avaliações</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="premios.html">Prêmios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="colecao.html">Minha Coleção</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="editor.html">Escolha do Editor</a>
+      </li>                  
+    </ul>
+  </div>
+ </nav>
+
+   <!-- Banner da página -->
+   <img src="../imagem/banner.png" alt="imagem do banner" width="100%" height="175" >
+
+   <!-- Subtítulo -->
+   <h1 class="centralizar">Guitas de Plantão, a sua página de coleção de guitarras</h1> <br> <br> <br> <br>
+    
+     <!-- Guitarras e opções de avaliação -->
+     <div class="row">
+       <div class="col-md-3">
+         <img src="../imagem/gibson.jpeg" alt="guitarra gibson" width="300" height="500">
+         <form>
+           Modelo de guitarra (Gênero):
+           <select class="custom-select">
+              <option selected="Escolha">Selecione uma guitarra</option>
+              <option>Gibson Slash</option>
+              <option>Fender Jimi Hendrix</option>
+              <option>Ibanez Kiko Loureiro</option>
+              <option>Guitarra Tonante</option>
+              <option>Tagima Juninho Afram</option>
+              <option>Majesty John Petrucci</option>             
+           </select> <br> <br>
+           Quantidade: <input type="number" id="quantidade1" value="0" name="nota" min="0" max="10"> <br> <br>
+           <button onclick="adicionar1()" type="button" name="a" class="btn btn-primary btn-sm">Adicionar a coleção</button>           
+         </form>  
+       </div>
+       <div class="col-md-1"></div>
+       <div class="col-md-3">
+         <img src="../imagem/fender.jpeg" alt="guitarra fender" width="300" height="500">
+         <form>
+           Modelo de guitarra (Gênero):
+           <select class="custom-select">
+              <option selected="Escolha">Selecione uma guitarra</option>
+              <option>Gibson Slash</option>
+              <option>Fender Jimi Hendrix</option>
+              <option>Ibanez Kiko Loureiro</option>
+              <option>Guitarra Tonante</option>
+              <option>Tagima Juninho Afram</option>
+              <option>Majesty John Petrucci</option>             
+           </select> <br> <br>
+           Quantidade: <input type="number" id="quantidade2" name="nota" min="0" max="10"> <br> <br>
+           <button onclick="adicionar2()" type="button" name="a" class="btn btn-primary btn-sm">Adicionar a coleção</button>           
+         </form>           
+       <div class="col-md-1"></div>  
+       </div>
+       <div class="col-md-1"></div>
+       <div class="col-md-3">
+         <img src="../imagem/ibanez.jpeg" alt="guitarra tonante" width="300" height="500">
+         <form>
+           Modelo de guitarra (Gênero):
+           <select class="custom-select">
+              <option selected="Escolha">Selecione uma guitarra</option>
+              <option>Gibson Slash</option>
+              <option>Fender Jimi Hendrix</option>
+              <option>Ibanez Kiko Loureiro</option>
+              <option>Guitarra Tonante</option>
+              <option>Tagima Juninho Afram</option>
+              <option>Majesty John Petrucci</option>             
+           </select> <br> <br>
+           Quantidade: <input type="number" id="quantidade3" name="nota" min="0" max="10"> <br> <br>
+           <button onclick="adicionar3()" type="button" name="a" class="btn btn-primary btn-sm">Adicionar a coleção</button>           
+         </form>           
+       </div>              
+     </div>
+   </form>
+   <br> <br>
+   <br> <br>
+
+     <div class="row">
+       <div class="col-md-3">
+         <img src="../imagem/tonante.jpeg" alt="guitarra ibanez" width="300" height="500">
+         <form>
+           Modelo de guitarra (Gênero):
+           <select class="custom-select">
+              <option selected="Escolha">Selecione uma guitarra</option>
+              <option>Gibson Slash</option>
+              <option>Fender Jimi Hendrix</option>
+              <option>Ibanez Kiko Loureiro</option>
+              <option>Guitarra Tonante</option>
+              <option>Tagima Juninho Afram</option>
+              <option>Majesty John Petrucci</option>             
+           </select> <br> <br>
+           Quantidade: <input type="number" id="quantidade4" name="nota" min="0" max="10"> <br> <br>
+           <button onclick="adicionar4()" type="button" name="a" class="btn btn-primary btn-sm">Adicionar a coleção</button>           
+         </form>  
+       </div>
+       <div class="col-md-1"></div>
+       <div class="col-md-3">
+         <img src="../imagem/tagima.jpg" alt="guitarra tagima" width="300" height="500">
+         <form>
+           Modelo de guitarra (Gênero):
+           <select class="custom-select">
+              <option selected="Escolha">Selecione uma guitarra</option>
+              <option>Gibson Slash</option>
+              <option>Fender Jimi Hendrix</option>
+              <option>Ibanez Kiko Loureiro</option>
+              <option>Guitarra Tonante</option>
+              <option>Tagima Juninho Afram</option>
+              <option>Majesty John Petrucci</option>             
+           </select> <br> <br>
+           Quantidade: <input type="number" id="quantidade5" name="nota" min="0" max="10"> <br> <br>
+           <button onclick="adicionar5()" type="button" name="a" class="btn btn-primary btn-sm">Adicionar a coleção</button>         
+         </form>           
+       <div class="col-md-1"></div>  
+       </div>
+       <div class="col-md-1"></div>
+       <div class="col-md-3">
+         <img src="../imagem/majesty.jpg" alt="guitarra majesty" width="300" height="500">
+         <form>
+           Modelo de guitarra (Gênero):
+           <select class="custom-select">
+              <option selected="Escolha">Selecione uma guitarra</option>
+              <option>Gibson Slash</option>
+              <option>Fender Jimi Hendrix</option>
+              <option>Ibanez Kiko Loureiro</option>
+              <option>Guitarra Tonante</option>
+              <option>Tagima Juninho Afram</option>
+              <option>Majesty John Petrucci</option>             
+           </select> <br> <br>
+           Quantidade: <input type="number" id="quantidade6" name="nota" min="0" max="10"> <br> <br>
+           <button onclick="adicionar6()" type="button" name="a" class="btn btn-primary btn-sm">Adicionar a coleção</button> <br> <br> <br> <br>
+         </form>           
+       </div>              
+     </div>
+   </form>
+
+   <div>
+     <h1 class="centralizar">Sua coleção</h1> <br>
+     <table border="2" style="width: 50%" align="center" class="centralizar">
+       <tr>
+         <th><h2>Guitarra</h2></th>
+         <th><h2>Quantidade</h2></th>
+       </tr>
+       <tr>
+         <th><h4>Gibson Slash</h4></th>
+         <th><h3 id="resultado1">0</h3></th>
+       </tr>
+       <tr>
+         <th><h4>Fender Jimi Hendrix</h4></th>
+         <th><h3 id="resultado2">0</h3></th>
+       </tr>
+       <tr>
+         <th><h4>Ibanez Kiko Loureiro</h4></th>
+         <th><h3 id="resultado3">0</h3></th>
+       </tr>
+       <tr>
+         <th><h4>Guitarra Tonante</h4></th>
+         <th><h3 id="resultado4">0</h3></th>
+       </tr>
+       <tr>
+         <th><h4>Tagima Juninho Afram</h4></th>
+         <th><h3 id="resultado5">0</h3></th>
+       </tr>
+       <tr>
+         <th><h4>Majesty John Petrucci</h4></th>
+         <th><h3 id="resultado6">0</h3></th>
+       </tr>                            
+     </table>
+   </div>
+   
+   <br> <br>
+   <br> <br> 
+
+   <!-- Rodapé -->
+    <hr color="black"> <br>
+    <div class="row">
+     <div class="col-md-4"> 
+      <h2 class="centralizar">Horário</h2>
+      <p class="centralizar">
+        Segunda a Sexta<br>
+        09:00 às 22:00<br>
+        Sábado<br>
+        09:00 às 12:00<br>
+      </p>
+     </div>
+     <div class="col-md-4"> 
+      <h2 class="centralizar">Local</h2>
+      <p class="centralizar">
+        Rua music maker, 567<br>
+        Centro<br>
+        Palma - MG<br>
+        CEP: 36750-000<br>
+      </p>
+     </div>
+     <div class="col-md-4"> 
+      <h2 class="centralizar">Contato</h2>
+      <p class="centralizar">
+        Reservas<br>
+        (0XX)9 1234-5678<br>
+        contato@guitasplantao.com.br<br>
+        (0XX)1234-5678<br>
+      </p>
+     </div> 
+    </div>  
+ </div>    
+</body>
+</html> 

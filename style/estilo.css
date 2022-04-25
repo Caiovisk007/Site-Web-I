@@ -1,0 +1,30 @@
+nav{
+	position: absolute;
+	bottom: 0px;
+	right: 10px;
+	font-size: 14px;
+}
+
+.centralizar{
+	text-align: center;
+}
+
+table{
+	width: 100%;
+}
+
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+
+p{
+	color: black;
+	font-size: 22px;
+	font-family: "Arial";
+}
+
+.justificar{
+	text-align: justify;
+}
+
